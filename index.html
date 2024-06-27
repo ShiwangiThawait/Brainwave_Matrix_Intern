@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopSavvy</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">ShopSavvy</div>
+	<section id="location">
+        	<h3>Update Location</h3>
+        	<p id="location-info">Fetching location...</p>
+	</section> 
+	<div class="search-bar">
+            <input type="text" id="search" placeholder="Search for products...">
+            <button id="search-btn">Search</button>
+        </div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Products</a>
+            <a href="#">Cart (<span id="cart-count">0</span>)</a>
+            <a href="#">Login</a>
+	    <a href="#">Signup</a>
+        </nav>
+
+    </header>
+
+    <main>
+        <section id="products">
+            
+            <div class="product" data-id="1" data-price="395">
+                <img src="https://m.media-amazon.com/images/I/81zDhENcdCL._AC_UL320_.jpg" alt="Artificial Plant">
+                <h3>Artificial Plant</h3>
+	  	<p>Rs.395</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" data-id="2" data-price="1740">
+                <img src="https://m.media-amazon.com/images/I/41i72sSCebL.AC_SX250.jpg" alt="Digital Watch">
+                <h3>Digital Watch</h3>
+	  	<p>Rs.1740</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+	    <div class="product" data-id="3" data-price="1795">
+                <img src="https://m.media-amazon.com/images/I/61bNK9Ug7kL._AC_UL320_.jpg" alt="Digital Wrist Watch">
+                <h3>Digital Wrist Watch</h3>
+	  	<p>Rs.1795</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" data-id="4" data-price="859">
+                <img src="https://m.media-amazon.com/images/I/4124KL+lCBL._SY300_SX300_.jpg" alt="Desk Clock">
+                <h3>Flip Desk Shelf Clock Classic </h3>
+	  	<p>Rs.859</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>           
+            <div class="product" data-id="5" data-price="4999">
+                <img src="https://m.media-amazon.com/images/I/719zWxFSu9L._AC_UL320_.jpg" alt="Diamond Ring">
+                <h3>Diamond Ring</h3>
+	  	<p>Rs.4999</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" data-id="6" data-price="3999"> 
+                <img src="https://m.media-amazon.com/images/I/511XGmDVHtL._AC_UL320_.jpg" alt="RoseGold Ring">
+                <h3>RoseGold Ring</h3>
+	  	<p>Rs.3999</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>	
+            <div class="product" data-id="7" data-price="3990">
+                <img src="https://m.media-amazon.com/images/I/51QthNyj7vL._AC_UL320_.jpg" alt="Small Diamond Ring">
+                <h3>Small Diamond Ring</h3>
+	  	<p>Rs.3990</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>	
+            <div class="product" data-id="8" data-price="1890" 
+          <img src="https://m.media-amazon.com/images/I/51GQmgx3O5L._AC_UL320_.jpg" alt="Rosegold Diamond Ring">> 
+                <img src="https://m.media-amazon.com/images/I/51GQmgx3O5L._AC_UL320_.jpg" alt="Rosegold Diamond Ring">
+                <h3>Rosegold Diamond Ring</h3>
+	  	<p>Rs.1890</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>	
+            <!-- Add more products as needed -->
+        </section>
+
+        <section id="cart">
+            <h2>Shopping Cart</h2>
+            <ul id="cart-items"></ul>
+            <p>Total: Rs.<span id="total">0.00</span></p>
+            <button id="checkout">Checkout</button>
+        </section>
+    </main>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
